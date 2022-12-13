@@ -24,7 +24,7 @@ const App = () => {
 
   React.useEffect(() => {
     axios
-      .get('http://hn.algolia.com/api/v1/search?query=react')
+      .get('https://hn.algolia.com/api/v1/search?query=react')
       .then((response) => {
         dispatch({ type: 'SET_LIST', list: response.data.hits })
       })
